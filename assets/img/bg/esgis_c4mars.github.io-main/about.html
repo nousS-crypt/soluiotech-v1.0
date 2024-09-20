@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SOLUIOTECH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav__bar">
+        <div class="logo">
+          <a href="#"><img src="assets/SOLUIOTECH_2024.png" alt="logo" /></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="section__container header__container" id="home">
+        <h1 id="headtitre">Rover4mars<br />made by <span>SOLUIOTECH</span>.</h1>
+      </div>
+  </header>
+
+   <section class="container mx-auto py-16 px-4">
+    <div class="text-center fade-in delay-100">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Who We Are</h2>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        SOLUIOTECH (Solution Using Internet of Things and Technology) is a community of robotics enthusiasts and innovators. Our mission is to solve real-world challenges through the development of smart and innovative technologies, leveraging the power of IoT and advanced engineering.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission  -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in delay-200">
+        <img src="./assets/teams.jpeg" alt="Mission Image" class="rounded-lg shadow-lg">
+      </div>
+
+      <div class="text-gray-800 fade-in delay-300">
+        <h3 class="text-3xl font-bold mb-4">Our Mission</h3>
+        <p class="text-lg leading-relaxed">
+          At SOLUIOTECH, our mission is to bridge the gap between innovation and practical application. We focus on the development of robotic solutions that can aid industries and communities in tackling everyday challenges, all while promoting sustainability and efficiency.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--  Équipe -->
+  <section class="container mx-auto py-16 px-4 bg-gray-50">
+    <h3 class="text-4xl font-bold text-center text-gray-800 mb-12 fade-in delay-100">Meet Our Team</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="text-center fade-in delay-200">
+        <img src="./assets/lead.jpeg" alt="Team Member 1" class="rounded-full w-48 h-48 mx-auto shadow-lg hover:scale-105 transition-transform duration-500">
+        <h4 class="text-xl font-semibold mt-4">Nom prenom</h4>
+        <p class="text-gray-600">Lead Engineer</p>
+      </div>
+
+      <div class="text-center fade-in delay-300">
+        <img src="./assets/team_lead.jpeg" alt="Team Member 2" class="rounded-full w-48 h-48 mx-auto shadow-lg hover:scale-105 transition-transform duration-500">
+        <h4 class="text-xl font-semibold mt-4">LW</h4>
+        <p class="text-gray-600">Project Manager</p>
+      </div>
+
+      <div class="text-center fade-in delay-400">
+        <img src="https://via.placeholder.com/200" alt="Team Member 3" class="rounded-full w-48 h-48 mx-auto shadow-lg hover:scale-105 transition-transform duration-500">
+        <h4 class="text-xl font-semibold mt-4">MAGENGO Guthem</h4>
+        <p class="text-gray-600">Software Developer</p>
+      </div>
+
+      <div class="text-center fade-in delay-500">
+        <img src="https://via.placeholder.com/200" alt="Team Member 4" class="rounded-full w-48 h-48 mx-auto shadow-lg hover:scale-105 transition-transform duration-500">
+        <h4 class="text-xl font-semibold mt-4">Jolie Joliette</h4>
+        <p class="text-gray-600">Mechanical Engineer</p>
+      </div>
+    </div>
+  </section>
+
+  <!--  Réalisations -->
+  <section class="bg-white py-16 px-4">
+    <h3 class="text-4xl font-bold text-center text-gray-800 mb-12 fade-in delay-100">Our Achievements</h3>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="fade-in delay-200">
+        <img src="./assets/tekbot.jpeg" alt="Project 1" class="rounded-lg shadow-lg w-full h-[750px] mb-4">
+        <h4 class="text-2xl font-semibold">TEKBOT ROBOTIC CHALLENCHE</h4>
+        <p class="text-gray-600 mt-2">Our Mars rover prototype, inspired by NASA's models, can traverse rough terrains and is equipped with advanced sensors for data collection.</p>
+      </div>
+
+      <div class="fade-in delay-300">
+        <img src="https://via.placeholder.com/500" alt="Project 2" class="rounded-lg shadow-lg w-full mb-4">
+        <h4 class="text-2xl font-semibold">Arduino WORKSHOP</h4>
+        <p class="text-gray-600 mt-2">We developed a smart irrigation system using IoT to optimize water usage for agriculture, reducing waste and improving crop yields.</p>
+      </div>
+
+      
+  </section>
+
+   <!-- Footer -->
+   <footer class="footer" id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h4>CONTACT US</h4>
+        <ul class="footer__links">
+          <li><a href="#">soluiotechinfo@gmail.com</a></li>
+        </ul>
+        <div class="footer__socials">
+          <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+          <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+          <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Soluiotech. All rights reserved.
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
